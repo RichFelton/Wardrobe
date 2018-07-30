@@ -38,6 +38,21 @@ namespace Wardrobe.Controllers
         // GET: Tops/Create
         public ActionResult Create()
         {
+            //List<SelectListItem> list = new List<SelectListItem>();
+            //list.Add(new SelectListItem { Text = "Select a season:", Value = "-1" });//set default text for DropdownList
+            //var cat = (from c in db.Seasons select c).ToArray();//get data from database using linq
+            //for (int i = 0; i < cat.Length; i++)
+            //{
+            //    list.Add(new SelectListItem { Text = cat[i].Season1, Value = cat[i].SeasonID.ToString() });
+            //}
+            //ViewData["list"] = list;
+
+            var items = db.Seasons.ToList();
+            if (items != null)
+            {
+                ViewBag.data = items;
+            }
+
             return View();
         }
 

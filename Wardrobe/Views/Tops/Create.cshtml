@@ -49,9 +49,18 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.Season, htmlAttributes: new { @class = "control-label col-md-2" })
+
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Season, new { htmlAttributes = new { @class = "form-control" } })
+
+                <select class="form-control text-box single-line" name="Season">                   
+                        <option value="Winter">Winter</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                </select>
+
                 @Html.ValidationMessageFor(model => model.Season, "", new { @class = "text-danger" })
+
             </div>
         </div>
 
