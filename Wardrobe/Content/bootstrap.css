@@ -4956,12 +4956,21 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+
+    background-image: url('../Images/Modern closet (large).jpg');
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 1500px;
+    height: 600px;
+    /*height: 820px;*/
+    /*width: auto;*/
+    margin-bottom: 30px;
+    color: white;
 }
+
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
@@ -4976,9 +4985,9 @@ a.badge:focus {
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
-  padding-right: 15px;
-  padding-left: 15px;
-  border-radius: 6px;
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+  /*border-radius: 6px;*/
 }
 .jumbotron .container {
   max-width: 100%;
@@ -4995,7 +5004,7 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 80px;
   }
 }
 .thumbnail {

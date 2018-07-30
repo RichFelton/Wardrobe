@@ -9,49 +9,49 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
+<div class="table">
+    <div>
+        <div>
             @Html.DisplayNameFor(model => model.Occasion1)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Accessory.Name)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Bottom.Name)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Sho.Name)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Top.Name)
-        </th>
-        <th></th>
-    </tr>
+        </div>
+        <div></div>
+    </div>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
+    <div>
+        <div>
             @Html.DisplayFor(modelItem => item.Occasion1)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Accessory.Name)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Bottom.Name)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Sho.Name)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Top.Name)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.ActionLink("Edit", "Edit", new { id=item.OccasionID }) |
             @Html.ActionLink("Details", "Details", new { id=item.OccasionID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.OccasionID })
-        </td>
-    </tr>
+        </div>
+    </div>
 }
 
-</table>
+</div>

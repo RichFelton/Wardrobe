@@ -22,13 +22,13 @@
         if (Model.CurrentLogins.Count > 0)
         {
             <h4>Registered Logins</h4>
-            <table class="table">
-                <tbody>
+            <div class="table">
+                <div>
                     @foreach (var account in Model.CurrentLogins)
                     {
-                        <tr>
-                            <td>@account.LoginProvider</td>
-                            <td>
+                        <div>
+                            <div>@account.LoginProvider</div>
+                            <div>
                                 @if (ViewBag.ShowRemoveButton)
                                 {
                                     using (Html.BeginForm("RemoveLogin", "Manage"))
@@ -45,11 +45,11 @@
                                 {
                                     @: &nbsp;
                                 }
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                     }
-                </tbody>
-            </table>
+                </div>
+            </div>
         }
         if (Model.OtherLogins.Count > 0)
         {

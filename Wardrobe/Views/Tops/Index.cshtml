@@ -9,55 +9,55 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
+<div class="table">
+    <div>
+        <div>
             @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Type)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Color)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Season)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Occassion)
-        </th>
-        <th></th>
-    </tr>
+        </div>
+        <div></div>
+    </div>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
+    <div>
+        <div>
             @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Photo)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Color)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Season)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Occassion)
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
             @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
-        </td>
-    </tr>
+        </div>
+    </div>
 }
 
-</table>
+</div>

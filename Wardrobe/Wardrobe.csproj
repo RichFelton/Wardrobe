@@ -259,6 +259,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Modern closet %28large%29.jpg" />
+    <Content Include="Images\Modern closet.jpg" />
     <Content Include="Images\wardrobe closet.jpeg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
